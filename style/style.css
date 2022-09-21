@@ -1,0 +1,1245 @@
+:root {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: #f0dde0;
+}
+
+.body {
+  background-color: black;
+  position: relative;
+  width: 100vw;
+  min-height: 100vh;
+  background: none;
+  overflow: hidden;
+}
+
+.wrapper {
+  background: url(/images/ESO_-_Milky_Way_smaller.jpg) center/cover no-repeat;
+  min-height: 100vh;
+}
+.wrapper .star {
+  position: absolute;
+  background-color: #f0dde0;
+  height: 2px;
+  width: 2px;
+  border-radius: 50%;
+  box-shadow: 0 0 0px 0.5px #f0dde0;
+  -webkit-animation: twinkle ease-in-out infinite;
+          animation: twinkle ease-in-out infinite;
+}
+.wrapper .star1 {
+  top: 10%;
+  left: 10%;
+  -webkit-animation-duration: 3.4s;
+          animation-duration: 3.4s;
+}
+.wrapper .star2 {
+  top: 5%;
+  left: 30%;
+  -webkit-animation-duration: 3.4s;
+          animation-duration: 3.4s;
+}
+.wrapper .star3 {
+  top: 40%;
+  left: 40%;
+  -webkit-animation-duration: 4.5s;
+          animation-duration: 4.5s;
+}
+.wrapper .star4 {
+  top: 16%;
+  left: 70%;
+  -webkit-animation-duration: 6s;
+          animation-duration: 6s;
+}
+.wrapper .star5 {
+  top: 90%;
+  left: 16%;
+  -webkit-animation-duration: 5.2s;
+          animation-duration: 5.2s;
+}
+.wrapper .star6 {
+  top: 81%;
+  left: 7%;
+  -webkit-animation-duration: 3.4s;
+          animation-duration: 3.4s;
+}
+.wrapper .star7 {
+  top: 83%;
+  left: 40%;
+  -webkit-animation-duration: 4.7s;
+          animation-duration: 4.7s;
+}
+.wrapper .star8 {
+  top: 53%;
+  left: 60%;
+  -webkit-animation-duration: 3.4s;
+          animation-duration: 3.4s;
+}
+.wrapper .star9 {
+  top: 47%;
+  left: 70%;
+  -webkit-animation-duration: 3.2s;
+          animation-duration: 3.2s;
+}
+.wrapper .star9 {
+  top: 70%;
+  left: 86%;
+  -webkit-animation-duration: 3.9s;
+          animation-duration: 3.9s;
+}
+.wrapper .star10 {
+  top: 10%;
+  left: 87%;
+  -webkit-animation-duration: 3.4s;
+          animation-duration: 3.4s;
+}
+.wrapper .star1 {
+  top: 10%;
+  left: 10%;
+  -webkit-animation-duration: 3.4s;
+          animation-duration: 3.4s;
+}
+.wrapper .flex-column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.wrapper .flex-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper .menu {
+  width: 100%;
+  justify-content: space-between;
+  padding: 2rem;
+  gap: 1rem;
+}
+.wrapper .menu .logo_container {
+  display: flex;
+  align-items: center;
+}
+.wrapper .menu .logo_container #logo {
+  margin-right: 1rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  font-size: clamp(1.2rem, 2.9vw, 1.6rem);
+}
+.wrapper .menu .logo_container .fa-github {
+  font-size: 3rem;
+}
+.wrapper .menu .menu_container {
+  display: flex;
+  align-items: baseline;
+}
+.wrapper .menu .menu_container label input {
+  color: black;
+  position: absolute;
+  display: none;
+}
+.wrapper .menu .menu_container label #skills_tools:checked ~ .skills {
+  display: block;
+  -webkit-animation: appear 0.1s ease-in;
+          animation: appear 0.1s ease-in;
+}
+.wrapper .menu .menu_container label #skills_tools:checked ~ .skills .html {
+  -webkit-animation: appear 1.5s ease-in;
+          animation: appear 1.5s ease-in;
+}
+.wrapper .menu .menu_container label #skills_tools:checked ~ .skills .css {
+  -webkit-animation: appear 2.5s ease-in;
+          animation: appear 2.5s ease-in;
+}
+.wrapper .menu .menu_container label #skills_tools:checked ~ .skills .markdown {
+  -webkit-animation: appear 1.7s ease-in;
+          animation: appear 1.7s ease-in;
+}
+.wrapper .menu .menu_container label #skills_tools:checked ~ .skills .bootstrap {
+  -webkit-animation: appear 1.9s ease-in;
+          animation: appear 1.9s ease-in;
+}
+.wrapper .menu .menu_container label #skills_tools:checked ~ .skills .github {
+  -webkit-animation: appear 2.1s ease-in;
+          animation: appear 2.1s ease-in;
+}
+.wrapper .menu .menu_container label #skills_tools:checked ~ .skills .libre-office {
+  -webkit-animation: appear 2.3s ease-in;
+          animation: appear 2.3s ease-in;
+}
+.wrapper .menu .menu_container label #skills_tools:checked ~ .skills .sass {
+  -webkit-animation: appear 2.3s ease-in;
+          animation: appear 2.3s ease-in;
+}
+.wrapper .menu .menu_container label #skills_tools:checked ~ .skills .npm {
+  -webkit-animation: appear 2.5s ease-in;
+          animation: appear 2.5s ease-in;
+}
+.wrapper .menu .menu_container label #projects:checked ~ .projects {
+  display: block;
+  -webkit-animation: appear 0.1s ease-in;
+          animation: appear 0.1s ease-in;
+}
+.wrapper .menu .menu_container label #projects:checked ~ .projects .konstruktiv {
+  -webkit-animation: appear 1.5s ease-in;
+          animation: appear 1.5s ease-in;
+}
+.wrapper .menu .menu_container label #projects:checked ~ .projects .med-kol {
+  -webkit-animation: appear 1.8s ease-in;
+          animation: appear 1.8s ease-in;
+}
+.wrapper .menu .menu_container label #projects:checked ~ .projects .arii {
+  -webkit-animation: appear 2.1s ease-in;
+          animation: appear 2.1s ease-in;
+}
+.wrapper .menu .menu_container label #education_input:checked ~ .education {
+  display: block;
+  -webkit-animation: appear 0.1s ease-in;
+          animation: appear 0.1s ease-in;
+}
+.wrapper .menu .menu_container label #education_input:checked ~ .education .dci {
+  -webkit-animation: appear 1.1s ease-in;
+          animation: appear 1.1s ease-in;
+}
+.wrapper .menu .menu_container label #contact_id:checked ~ .contact {
+  display: block;
+  -webkit-animation: appear 1s ease-in;
+          animation: appear 1s ease-in;
+}
+.wrapper .menu .menu_container label > span {
+  position: relative;
+  background: none;
+  color: #b8b7c5;
+  border: none;
+  padding: 2rem;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: clamp(1.2rem, 2.9vw, 1.6rem);
+}
+.wrapper .menu .menu_container label > span:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1px;
+  bottom: 1rem;
+  left: 3rem;
+  background-color: #f0dde0;
+  transform-origin: bottom left;
+  transition: transform 0.5s ease-out;
+}
+.wrapper .menu .menu_container label > span:hover:after {
+  transform: scaleX(0.5);
+  transform-origin: bottom left;
+}
+.wrapper .menu .menu_container label .container {
+  position: absolute;
+  height: 50vh;
+  width: 30vw;
+  display: none;
+}
+.wrapper .menu .menu_container label .container h2 {
+  display: none;
+  margin-bottom: 1rem;
+}
+.wrapper .menu .menu_container label .container .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  padding: 0.5rem;
+  transition: all 0.5s;
+  border-bottom: 2px solid #f0dde0;
+  border-top: 2px solid #f0dde0;
+  border-radius: 5px;
+}
+.wrapper .menu .menu_container label .container .card:hover {
+  box-shadow: 0 0 10px #0e1820;
+  background-color: #f0dde0;
+}
+.wrapper .menu .menu_container label .container .card:hover p {
+  color: #0e1820;
+}
+.wrapper .menu .menu_container label .container .card:hover h2 {
+  color: #0e1820;
+}
+.wrapper .menu .menu_container label .container .card:hover i {
+  color: #0e1820;
+}
+.wrapper .menu .menu_container label .container .card span {
+  background: linear-gradient(270deg, rgb(15, 122, 175) 0%, rgb(240, 221, 224) 0%, rgba(94, 94, 94, 0) 100%);
+  height: 2px;
+  width: 20px;
+  position: absolute;
+}
+.wrapper .menu .menu_container label .container .card span::before {
+  content: "";
+  background-color: #d9c7ea;
+  height: 3px;
+  width: 3px;
+  border-radius: 50%;
+  position: absolute;
+  left: -8px;
+  top: -2px;
+  box-shadow: 0 0 0px 0.5px #f0dde0;
+  -webkit-animation: twinkle ease-in-out infinite;
+          animation: twinkle ease-in-out infinite;
+}
+.wrapper .menu .menu_container label .container .card p {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  color: #f0dde0;
+  font-weight: 600;
+}
+.wrapper .menu .menu_container label .container .card i {
+  font-size: 3.5rem;
+}
+.wrapper .menu .menu_container label .container .card .icon {
+  width: 40px;
+  height: 40px;
+}
+.wrapper .menu .menu_container label .skills {
+  bottom: 10%;
+  left: 10%;
+}
+.wrapper .menu .menu_container label .skills .bootstrap {
+  bottom: 55%;
+  left: 40%;
+}
+.wrapper .menu .menu_container label .skills .bootstrap span {
+  transform: rotatez(30deg);
+  right: 90%;
+  bottom: 110%;
+  width: 30px;
+}
+.wrapper .menu .menu_container label .skills .bootstrap span::before {
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+}
+.wrapper .menu .menu_container label .skills .bootstrap .icon {
+  width: 45px;
+}
+.wrapper .menu .menu_container label .skills .github {
+  bottom: 80%;
+  right: 95%;
+}
+.wrapper .menu .menu_container label .skills .github span {
+  transform: rotatez(166deg);
+  left: 90%;
+  top: 92%;
+  width: 40px;
+}
+.wrapper .menu .menu_container label .skills .github span::before {
+  -webkit-animation-duration: 3.5s;
+          animation-duration: 3.5s;
+}
+.wrapper .menu .menu_container label .skills .css {
+  bottom: 85%;
+  left: 43%;
+}
+.wrapper .menu .menu_container label .skills .css span {
+  transform: rotatez(300deg);
+  top: 110%;
+  right: 88%;
+}
+.wrapper .menu .menu_container label .skills .css span::before {
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+}
+.wrapper .menu .menu_container label .skills .html {
+  bottom: 105%;
+  left: 24%;
+}
+.wrapper .menu .menu_container label .skills .html span {
+  transform: rotatez(266deg);
+  right: 30%;
+  top: 135%;
+  width: 50px;
+}
+.wrapper .menu .menu_container label .skills .html span::before {
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+}
+.wrapper .menu .menu_container label .skills .libre-office {
+  bottom: 0%;
+  left: 11%;
+}
+.wrapper .menu .menu_container label .skills .libre-office span {
+  right: 80%;
+  bottom: 150%;
+  transform: rotatez(60deg);
+  width: 100px;
+}
+.wrapper .menu .menu_container label .skills .libre-office span::before {
+  -webkit-animation-duration: 6s;
+          animation-duration: 6s;
+}
+.wrapper .menu .menu_container label .skills .markdown {
+  bottom: 100%;
+  right: 85%;
+}
+.wrapper .menu .menu_container label .skills .markdown span {
+  left: 90%;
+  top: 115%;
+  transform: rotatez(245deg);
+}
+.wrapper .menu .menu_container label .skills .markdown span::before {
+  -webkit-animation-duration: 7s;
+          animation-duration: 7s;
+}
+.wrapper .menu .menu_container label .skills .sass {
+  bottom: 55%;
+  left: 0%;
+}
+.wrapper .menu .menu_container label .skills .sass span {
+  transform: rotatez(145deg);
+  left: 75%;
+  bottom: 112%;
+  width: 30px;
+}
+.wrapper .menu .menu_container label .skills .sass span::before {
+  -webkit-animation-duration: 2.7s;
+          animation-duration: 2.7s;
+}
+.wrapper .menu .menu_container label .skills .npm {
+  bottom: 50%;
+  left: 22%;
+}
+.wrapper .menu .menu_container label .skills .npm span {
+  transform: rotatez(88deg);
+  left: 50%;
+  bottom: 115%;
+  width: 20px;
+}
+.wrapper .menu .menu_container label .skills .npm span::before {
+  -webkit-animation-duration: 4.4s;
+          animation-duration: 4.4s;
+}
+.wrapper .menu .menu_container label .projects {
+  bottom: 10%;
+  left: 28%;
+}
+.wrapper .menu .menu_container label .projects .card:hover .preview a img {
+  display: block;
+  -webkit-animation: appear 1s;
+          animation: appear 1s;
+}
+.wrapper .menu .menu_container label .projects .card .preview a {
+  text-decoration: none;
+}
+.wrapper .menu .menu_container label .projects .card .preview a img {
+  position: absolute;
+  width: 200px;
+  height: 150px;
+  display: none;
+  border: 1px solid #0e1820;
+  border-radius: 10px;
+}
+.wrapper .menu .menu_container label .projects .konstruktiv {
+  bottom: 80%;
+  left: 15%;
+}
+.wrapper .menu .menu_container label .projects .konstruktiv span {
+  transform: rotatez(240deg);
+  left: 50%;
+  top: 128%;
+}
+.wrapper .menu .menu_container label .projects .konstruktiv span::before {
+  -webkit-animation-duration: 3.2s;
+          animation-duration: 3.2s;
+}
+.wrapper .menu .menu_container label .projects .konstruktiv .preview a img {
+  bottom: -150%;
+  left: 100%;
+}
+.wrapper .menu .menu_container label .projects .med-kol {
+  bottom: 40%;
+  left: 10%;
+}
+.wrapper .menu .menu_container label .projects .med-kol span {
+  transform: rotatez(113deg);
+  left: 60%;
+  bottom: 200%;
+  width: 60px;
+}
+.wrapper .menu .menu_container label .projects .med-kol span::before {
+  -webkit-animation-duration: 3.7s;
+          animation-duration: 3.7s;
+}
+.wrapper .menu .menu_container label .projects .med-kol .preview a img {
+  top: 100%;
+  left: 0;
+}
+.wrapper .menu .menu_container label .projects .arii {
+  bottom: 55%;
+  left: 60%;
+}
+.wrapper .menu .menu_container label .projects .arii span {
+  transform: rotatez(40deg);
+  bottom: 140%;
+  right: 90%;
+  width: 40px;
+}
+.wrapper .menu .menu_container label .projects .arii span::before {
+  -webkit-animation-duration: 4.4s;
+          animation-duration: 4.4s;
+}
+.wrapper .menu .menu_container label .projects .arii .preview a img {
+  top: 0;
+  left: 100%;
+}
+.wrapper .menu .menu_container label .education {
+  top: 50%;
+  left: 60%;
+}
+.wrapper .menu .menu_container label .education .card {
+  -webkit-animation: borders 1s linear infinite;
+          animation: borders 1s linear infinite;
+}
+.wrapper .menu .menu_container label .education .card a {
+  text-decoration: none;
+}
+.wrapper .menu .menu_container label .education .card h2 {
+  text-align: center;
+  font-size: 2rem;
+  border-bottom: 1px solid #f0dde0;
+  margin: 1rem;
+  color: #f0dde0;
+  width: 100%;
+}
+.wrapper .menu .menu_container label .education .dci {
+  top: 20%;
+  left: 15%;
+}
+.wrapper .menu .menu_container label .education .dci span {
+  width: 50px;
+  right: 86%;
+  bottom: 120%;
+  transform: rotatez(80deg);
+}
+.wrapper .menu .menu_container label .education .dci span::before {
+  -webkit-animation-duration: 2.6s;
+          animation-duration: 2.6s;
+}
+.wrapper .menu .menu_container label .education .dci a .icon {
+  width: 100px;
+  height: 100px;
+}
+.wrapper .menu .menu_container label .contact {
+  top: 15%;
+  left: 77%;
+  width: 300px;
+  margin-right: 1rem;
+  transition: all 0.5s;
+}
+.wrapper .menu .menu_container label .contact form {
+  background-color: rgba(15, 51, 77, 0.548);
+  align-items: flex-start;
+  border-radius: 2px;
+  border-left: 1px solid #f0dde0;
+  padding: 1rem;
+}
+.wrapper .menu .menu_container label .contact form h2 {
+  display: block;
+  text-align: center;
+  font-size: 1.6rem;
+  letter-spacing: 2px;
+  border-bottom: 1px solid #f0dde0;
+  margin: 1rem;
+  align-self: center;
+  text-transform: uppercase;
+}
+.wrapper .menu .menu_container label .contact form div {
+  margin: 1.5rem;
+  width: 100%;
+}
+.wrapper .menu .menu_container label .contact form div input {
+  position: static;
+  display: block;
+  color: #f0dde0;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #f0dde0;
+  width: 90%;
+}
+.wrapper .menu .menu_container label .contact form div input:focus {
+  outline: none;
+}
+.wrapper .menu .menu_container label .contact form div textarea {
+  position: static;
+  color: #f0dde0;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #f0dde0;
+  width: 90%;
+}
+.wrapper .menu .menu_container label .contact form div textarea:focus {
+  outline: none;
+}
+.wrapper .menu .menu_container label .contact form button {
+  background-color: transparent;
+  color: #b8b7c5;
+  border: none;
+  box-shadow: 0 0 2px #f0dde0;
+  align-self: center;
+  cursor: pointer;
+  padding: 1rem;
+  transition: 0.25s;
+}
+.wrapper .menu .menu_container label .contact form button:hover, .wrapper .menu .menu_container label .contact form button:focus {
+  box-shadow: inset 0 0 0 2em #f0dde0;
+  color: #0e1820;
+}
+.wrapper .menu .menu_container label .contact span {
+  background: linear-gradient(270deg, rgb(15, 122, 175) 0%, rgb(240, 221, 224) 0%, rgba(94, 94, 94, 0) 100%);
+  height: 2px;
+  width: 100px;
+  position: absolute;
+  top: 50%;
+  right: 94%;
+  transform: rotatez(310deg);
+}
+.wrapper .menu .menu_container label .contact span::before {
+  content: "";
+  background-color: #d9c7ea;
+  height: 3px;
+  width: 3px;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  box-shadow: 0 0 0px 0.5px #f0dde0;
+  -webkit-animation: twinkle 3s ease-in-out infinite;
+          animation: twinkle 3s ease-in-out infinite;
+}
+.wrapper .menu .menu_container label .contact .contact_details_container {
+  margin-top: 1rem;
+  justify-content: flex-start;
+  gap: 1rem;
+  border-left: 1px solid #f0dde0;
+  border-radius: 2px;
+}
+.wrapper .menu .menu_container label .contact .contact_details_container .contact_details {
+  background-color: rgba(15, 51, 77, 0.548);
+  border-radius: 10px;
+  font-size: 1.4rem;
+  width: 144px;
+  padding: 1rem;
+  gap: 2rem;
+}
+.wrapper .menu .menu_container label .contact .contact_details_container .contact_details i {
+  font-size: 3rem;
+}
+.wrapper .introduction {
+  width: 35%;
+  margin: 2vh auto;
+  align-items: flex-start;
+  transition: all 0.25s;
+}
+.wrapper .introduction .heading {
+  width: 95%;
+  border-bottom: 1px solid #f0dde0;
+}
+.wrapper .introduction .heading h1 {
+  font-size: clamp(2rem, 5vw, 5rem);
+}
+.wrapper .introduction p {
+  font-size: clamp(1.2rem, 2vw, 1.6rem);
+  line-height: 2;
+}
+.wrapper .introduction p a {
+  text-decoration: none;
+  color: #b8b7c5;
+}
+.wrapper .credit {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 1rem;
+}
+
+@media (min-width: 864px) and (max-width: 1417px) {
+  .wrapper .menu .menu_container label .skills .bootstrap {
+    transform: translate(-40%, 0);
+  }
+  .wrapper .menu .menu_container label .skills .github {
+    transform: translate(-20%, 0);
+  }
+  .wrapper .menu .menu_container label .skills .css {
+    transform: translate(-80%, 0);
+  }
+  .wrapper .menu .menu_container label .skills .html {
+    transform: translate(-40%, 0);
+  }
+  .wrapper .menu .menu_container label .skills .libre-office {
+    transform: translate(-40%, 0);
+  }
+  .wrapper .menu .menu_container label .skills .markdown {
+    transform: translate(-15%, 0);
+  }
+  .wrapper .menu .menu_container label .skills .sass {
+    transform: translate(-110%, 0);
+  }
+  .wrapper .menu .menu_container label .skills .npm {
+    transform: translate(-110%, 0);
+  }
+  .wrapper .menu .menu_container label .projects {
+    z-index: 10;
+  }
+  .wrapper .menu .menu_container label .projects .konstruktiv {
+    transform: translate(-40%, 20);
+  }
+  .wrapper .menu .menu_container label .projects .konstruktiv .preview a img {
+    top: -200%;
+  }
+  .wrapper .menu .menu_container label .projects .med-kol {
+    transform: translate(-40%, 0);
+  }
+  .wrapper .menu .menu_container label .projects .arii {
+    transform: translate(-30%, 0);
+  }
+  .wrapper .menu .menu_container label .projects .arii span {
+    width: 20px;
+    bottom: 117%;
+    right: 50%;
+    transform: rotatez(30deg);
+  }
+  .wrapper .menu .menu_container label .education .dci {
+    transform: translate(60%, 20%);
+  }
+  .wrapper .menu .menu_container label .education .dci h2 {
+    display: block;
+  }
+  .wrapper .menu .menu_container label .contact {
+    transform: scale(0.7) translate(-25%, 0);
+  }
+  .wrapper .menu .menu_container label .contact h2 {
+    display: block;
+  }
+  .wrapper .introduction {
+    width: 50%;
+  }
+}
+@media (min-width: 601px) and (max-width: 863px) {
+  .wrapper {
+    background-attachment: fixed;
+    height: 180vh;
+    overflow: scroll;
+  }
+  .wrapper .menu {
+    padding: 2rem;
+    flex-direction: column;
+  }
+  .wrapper .menu .menu_container label > span {
+    padding: 1rem;
+  }
+  .wrapper .menu .menu_container label .container {
+    display: grid;
+    width: 75%;
+    height: auto;
+    position: absolute;
+    margin: 0 auto;
+  }
+  .wrapper .menu .menu_container label .container h2 {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: 1/1/2/4;
+    text-transform: uppercase;
+    border-bottom: 2px solid #f0dde0;
+  }
+  .wrapper .menu .menu_container label .container .card {
+    text-align: center;
+    display: inline-block;
+    position: static;
+    border: none;
+    margin-top: 1vh;
+  }
+  .wrapper .menu .menu_container label .container .card span {
+    display: none;
+  }
+  .wrapper .menu .menu_container label #skills_tools:checked ~ .skills {
+    display: grid;
+    -webkit-animation: none;
+            animation: none;
+  }
+  .wrapper .menu .menu_container label #skills_tools:checked ~ .skills .html {
+    -webkit-animation: none;
+            animation: none;
+  }
+  .wrapper .menu .menu_container label #skills_tools:checked ~ .skills .css {
+    -webkit-animation: none;
+            animation: none;
+  }
+  .wrapper .menu .menu_container label #skills_tools:checked ~ .skills .markdown {
+    -webkit-animation: none;
+            animation: none;
+  }
+  .wrapper .menu .menu_container label #skills_tools:checked ~ .skills .bootstrap {
+    -webkit-animation: none;
+            animation: none;
+  }
+  .wrapper .menu .menu_container label #skills_tools:checked ~ .skills .github {
+    -webkit-animation: none;
+            animation: none;
+  }
+  .wrapper .menu .menu_container label #skills_tools:checked ~ .skills .libre-office {
+    -webkit-animation: none;
+            animation: none;
+  }
+  .wrapper .menu .menu_container label #skills_tools:checked ~ .skills .sass {
+    -webkit-animation: none;
+            animation: none;
+  }
+  .wrapper .menu .menu_container label #skills_tools:checked ~ .skills .npm {
+    -webkit-animation: none;
+            animation: none;
+  }
+  .wrapper .menu .menu_container label #projects:checked ~ .projects {
+    display: grid;
+    -webkit-animation: none;
+            animation: none;
+  }
+  .wrapper .menu .menu_container label #projects:checked ~ .projects .konstruktiv {
+    -webkit-animation: none;
+            animation: none;
+  }
+  .wrapper .menu .menu_container label #projects:checked ~ .projects .med-kol {
+    -webkit-animation: none;
+            animation: none;
+  }
+  .wrapper .menu .menu_container label #projects:checked ~ .projects .arii {
+    -webkit-animation: none;
+            animation: none;
+  }
+  .wrapper .menu .menu_container label #education_input:checked ~ .education {
+    display: flex;
+    -webkit-animation: none;
+            animation: none;
+  }
+  .wrapper .menu .menu_container label #education_input:checked ~ .education .dci {
+    -webkit-animation: none;
+            animation: none;
+  }
+  .wrapper .menu .menu_container label #contact_id:checked ~ .contact {
+    display: grid;
+    -webkit-animation: none;
+            animation: none;
+  }
+  .wrapper .menu .menu_container label .skills {
+    top: 35%;
+  }
+  .wrapper .menu .menu_container label .skills h2 {
+    height: 20px;
+  }
+  .wrapper .menu .menu_container label .skills .card {
+    height: 70px;
+  }
+  .wrapper .menu .menu_container label .projects {
+    left: 10%;
+    z-index: 10;
+    top: 85%;
+  }
+  .wrapper .menu .menu_container label .projects .card {
+    height: 25px;
+  }
+  .wrapper .menu .menu_container label .projects .card .preview a img {
+    top: 210%;
+    border: none;
+  }
+  .wrapper .menu .menu_container label .projects .konstruktiv .preview a img {
+    left: 0;
+  }
+  .wrapper .menu .menu_container label .projects .med-kol .preview a img {
+    left: 40%;
+  }
+  .wrapper .menu .menu_container label .projects .arii .preview a img {
+    left: 60%;
+  }
+  .wrapper .menu .menu_container label .education {
+    margin-top: 15vh;
+    z-index: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    left: 10%;
+    top: 95%;
+  }
+  .wrapper .menu .menu_container label .education .dci {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .wrapper .menu .menu_container label .contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 400px;
+    top: 133%;
+    left: 0;
+    right: 0;
+    background-color: rgba(15, 51, 77, 0.548);
+  }
+  .wrapper .menu .menu_container label .contact form {
+    background-color: transparent;
+    box-shadow: none;
+    border: none;
+  }
+  .wrapper .menu .menu_container label .contact form button {
+    color: #f0dde0;
+  }
+  .wrapper .menu .menu_container label .contact span {
+    display: none;
+  }
+  .wrapper .menu .menu_container label .contact .contact_details_container {
+    border: none;
+  }
+  .wrapper .menu .menu_container label .contact .contact_details_container .contact_details {
+    background-color: transparent;
+    box-shadow: none;
+  }
+  .wrapper .introduction {
+    width: 75%;
+    margin: 3vh auto;
+  }
+  .wrapper .credit {
+    top: 176%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+  }
+}
+@media (max-width: 600px) {
+  .wrapper {
+    background-attachment: fixed;
+    height: 175vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+  .wrapper .menu {
+    padding: 2rem;
+    flex-direction: column;
+  }
+  .wrapper .menu .menu_container label > span {
+    padding: 1rem;
+  }
+  .wrapper .menu .menu_container label .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 75px;
+    width: 75%;
+    height: auto;
+    position: absolute;
+    margin: 0 auto;
+  }
+  .wrapper .menu .menu_container label .container h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: 1/1/2/4;
+    text-transform: uppercase;
+    border-bottom: 2px solid white;
+  }
+  .wrapper .menu .menu_container label .container .card {
+    grid-column: 1/-1;
+    text-align: center;
+    display: inline-block;
+    position: static;
+    border: none;
+  }
+  .wrapper .menu .menu_container label .container .card:hover {
+    box-shadow: none;
+    background-color: #f0dde0;
+    border: none;
+  }
+  .wrapper .menu .menu_container label .container .card p {
+    color: #b8b7c5;
+  }
+  .wrapper .menu .menu_container label .container .card span {
+    display: none;
+  }
+  .wrapper .menu .menu_container label #skills_tools:checked ~ .skills {
+    display: grid;
+    -webkit-animation: none;
+            animation: none;
+  }
+  .wrapper .menu .menu_container label #skills_tools:checked ~ .skills .html {
+    -webkit-animation: none;
+            animation: none;
+  }
+  .wrapper .menu .menu_container label #skills_tools:checked ~ .skills .css {
+    -webkit-animation: none;
+            animation: none;
+  }
+  .wrapper .menu .menu_container label #skills_tools:checked ~ .skills .markdown {
+    -webkit-animation: none;
+            animation: none;
+  }
+  .wrapper .menu .menu_container label #skills_tools:checked ~ .skills .bootstrap {
+    -webkit-animation: none;
+            animation: none;
+  }
+  .wrapper .menu .menu_container label #skills_tools:checked ~ .skills .github {
+    -webkit-animation: none;
+            animation: none;
+  }
+  .wrapper .menu .menu_container label #skills_tools:checked ~ .skills .libre-office {
+    -webkit-animation: none;
+            animation: none;
+  }
+  .wrapper .menu .menu_container label #skills_tools:checked ~ .skills .sass {
+    -webkit-animation: none;
+            animation: none;
+  }
+  .wrapper .menu .menu_container label #skills_tools:checked ~ .skills .npm {
+    -webkit-animation: none;
+            animation: none;
+  }
+  .wrapper .menu .menu_container label #projects:checked ~ .projects {
+    display: grid;
+    -webkit-animation: none;
+            animation: none;
+  }
+  .wrapper .menu .menu_container label #projects:checked ~ .projects .konstruktiv {
+    -webkit-animation: none;
+            animation: none;
+  }
+  .wrapper .menu .menu_container label #projects:checked ~ .projects .med-kol {
+    -webkit-animation: none;
+            animation: none;
+  }
+  .wrapper .menu .menu_container label #projects:checked ~ .projects .arii {
+    -webkit-animation: none;
+            animation: none;
+  }
+  .wrapper .menu .menu_container label #education_input:checked ~ .education {
+    display: flex;
+    -webkit-animation: none;
+            animation: none;
+  }
+  .wrapper .menu .menu_container label #education_input:checked ~ .education .dci {
+    -webkit-animation: none;
+            animation: none;
+  }
+  .wrapper .menu .menu_container label #contact_id:checked ~ .contact {
+    display: grid;
+    -webkit-animation: none;
+            animation: none;
+  }
+  .wrapper .menu .menu_container label .skills {
+    top: 35%;
+    height: 300px;
+  }
+  .wrapper .menu .menu_container label .skills .bootstrap {
+    grid-area: 3/2/4/3;
+  }
+  .wrapper .menu .menu_container label .skills .github {
+    grid-area: 3/3/4/4;
+  }
+  .wrapper .menu .menu_container label .skills .css {
+    grid-area: 2/2/3/3;
+  }
+  .wrapper .menu .menu_container label .skills .html {
+    grid-area: 2/1/3/2;
+  }
+  .wrapper .menu .menu_container label .skills .markdown {
+    grid-area: 3/1/4/2;
+  }
+  .wrapper .menu .menu_container label .skills .sass {
+    grid-area: 2/3/3/4;
+  }
+  .wrapper .menu .menu_container label .projects {
+    left: 10%;
+    top: 70%;
+    grid-auto-rows: 37px;
+  }
+  .wrapper .menu .menu_container label .projects .card {
+    text-align: left;
+  }
+  .wrapper .menu .menu_container label .projects .card .preview a img {
+    left: 30%;
+    top: 63%;
+  }
+  .wrapper .menu .menu_container label .education {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    left: 10%;
+    top: 100%;
+    padding: 1rem;
+  }
+  .wrapper .menu .menu_container label .education h2 {
+    grid-area: 1/1/2/-1;
+    width: 100%;
+  }
+  .wrapper .menu .menu_container label .contact {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    height: 500px;
+    top: 120%;
+    left: 0;
+    right: 0;
+    background-color: rgba(15, 51, 77, 0.548);
+  }
+  .wrapper .menu .menu_container label .contact h2 {
+    text-decoration: none;
+  }
+  .wrapper .menu .menu_container label .contact form {
+    background-color: transparent;
+    box-shadow: none;
+    margin-top: 15vh;
+    border: none;
+  }
+  .wrapper .menu .menu_container label .contact form button {
+    color: #f0dde0;
+  }
+  .wrapper .menu .menu_container label .contact span {
+    display: none;
+  }
+  .wrapper .menu .menu_container label .contact .contact_details_container {
+    margin: 30vh auto 0 auto;
+  }
+  .wrapper .menu .menu_container label .contact .contact_details_container .contact_details {
+    background-color: transparent;
+    box-shadow: none;
+  }
+  .wrapper .introduction {
+    width: 75%;
+    margin: 3vh auto;
+  }
+  .wrapper .credit {
+    top: 170%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+  }
+}
+/* The typing effect */
+@-webkit-keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+/* The typewriter cursor effect */
+@-webkit-keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #b8b7c5;
+  }
+}
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #b8b7c5;
+  }
+}
+@-webkit-keyframes appear {
+  from {
+    opacity: 0;
+    scale: 0;
+  }
+  60% {
+    opacity: 1;
+    scale: 1.02;
+  }
+  80% {
+    opacity: 1;
+    scale: 1;
+  }
+}
+@keyframes appear {
+  from {
+    opacity: 0;
+    scale: 0;
+  }
+  60% {
+    opacity: 1;
+    scale: 1.02;
+  }
+  80% {
+    opacity: 1;
+    scale: 1;
+  }
+}
+@-webkit-keyframes twinkle {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.8);
+  }
+  75% {
+    transform: scale(1.4);
+    background-color: rgb(255, 255, 198);
+    box-shadow: 0 0 3px 0.5px #f0dde0;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes twinkle {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.8);
+  }
+  75% {
+    transform: scale(1.4);
+    background-color: rgb(255, 255, 198);
+    box-shadow: 0 0 3px 0.5px #f0dde0;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@-webkit-keyframes animate {
+  from {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes animate {
+  from {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+  }
+}/*# sourceMappingURL=style.css.map */
