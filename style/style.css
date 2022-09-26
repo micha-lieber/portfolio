@@ -161,6 +161,21 @@
   display: flex;
   align-items: center;
 }
+.wrapper .menu .logo_container a .visible-hidden {
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+.wrapper .menu .logo_container a .visible-hidden:focus {
+  clip: auto;
+  height: auto;
+  overflow: auto;
+  position: absolute;
+  width: auto;
+}
 .wrapper .menu .logo_container #logo {
   margin-right: 1rem;
   font-weight: 600;
@@ -307,6 +322,21 @@
 }
 .wrapper .menu .menu_container label .container .card:hover i {
   color: #0e1820;
+}
+.wrapper .menu .menu_container label .container .card a .visible-hidden {
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+.wrapper .menu .menu_container label .container .card a .visible-hidden:focus {
+  clip: auto;
+  height: auto;
+  overflow: auto;
+  position: absolute;
+  width: auto;
 }
 .wrapper .menu .menu_container label .container .card span {
   background: linear-gradient(270deg, rgb(15, 122, 175) 0%, rgb(240, 221, 224) 0%, rgba(94, 94, 94, 0) 100%);
